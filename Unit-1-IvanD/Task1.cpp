@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int Task1::firstTask(){
+int Task1::firstTask() {
     int maxSize = 10;
     int i;
     int j;

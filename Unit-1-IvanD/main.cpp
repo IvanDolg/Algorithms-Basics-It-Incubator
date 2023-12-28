@@ -1,6 +1,8 @@
 #include <iostream>
+#include "string"
 #include "Task1.h"
 #include "Task2.h"
+#include "Task3.h"
 
 using namespace std;
 
@@ -12,14 +14,15 @@ int showMenu() {
     cout << "3. Task 3\n";
     cout << "0. Exit\n";
     cout << "Enter number of menu:  ";
-   cin >> choice;
+    cin >> choice;
     return choice;
 }
 
-int main(){
+int main() {
     int choice;
     Task1 task1;
     Task2 task2;
+    Task3 task3;
     do {
         choice = showMenu();
         switch (choice) {
@@ -29,8 +32,15 @@ int main(){
             case 2:
                 task2.secondTask();
                 break;
-            case 3:
+            case 3: {
+                string dateOfBirth;
+                cout << "Enter your date of birth (in the format DDMMYYYY): ";
+                cin >> dateOfBirth;
+
+                int lifePathNumber = task3.calculateLifePathNumber(dateOfBirth);
+                cout << "Your life path number is: " << lifePathNumber << endl;
                 break;
+            }
             case 0:
                 cout << "Exit\n";
                 break;

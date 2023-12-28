@@ -7,4 +7,6 @@ add_executable(untitled1 Unit-1-IvanD/main.cpp
         Unit-1-IvanD/Task1.h
         Unit-1-IvanD/Task2.h
         Unit-1-IvanD/Task1.cpp
-        Unit-1-IvanD/Task2.cpp)
+        Unit-1-IvanD/Task2.cpp
+        Unit-1-IvanD/Task3.cpp
+        Unit-1-IvanD/Task3.h)
