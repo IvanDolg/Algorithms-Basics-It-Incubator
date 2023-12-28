@@ -3,6 +3,7 @@
 #include "Task1.h"
 #include "Task2.h"
 #include "Task3.h"
+#include "Ladder.h"
 
 using namespace std;
 
@@ -12,6 +13,7 @@ int showMenu() {
     cout << "1. Task 1\n";
     cout << "2. Task 2\n";
     cout << "3. Task 3\n";
+    cout << "4. Task 4\n";
     cout << "0. Exit\n";
     cout << "Enter number of menu:  ";
     cin >> choice;
@@ -23,6 +25,7 @@ int main() {
     Task1 task1;
     Task2 task2;
     Task3 task3;
+    Ladder ladder2;
     do {
         choice = showMenu();
         switch (choice) {
@@ -41,6 +44,10 @@ int main() {
                 cout << "Your life path number is: " << lifePathNumber << endl;
                 break;
             }
+            case 4:
+                ladder2.ladderNumbers();
+                ladder2.print();
+                ladder2.print4();
             case 0:
                 cout << "Exit\n";
                 break;
