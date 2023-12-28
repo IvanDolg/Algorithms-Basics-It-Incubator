@@ -3,7 +3,7 @@
 
 class Task1 {
 public:
-    int firstTask();
+    void firstTask();
 };
 
 #endif

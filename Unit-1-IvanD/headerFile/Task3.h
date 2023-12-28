@@ -4,10 +4,13 @@
 
 class Task3 {
 private:
-    static int calculateDigitSum(int number);
+    int calculateDigitSum(int number);
+
+    int calculateLifePathNumber(std::string dateOfBirth);
 
 public:
-    static int calculateLifePathNumber(const std::string &dateOfBirth);
+    void thirdTask();
+
 };
 
 #endif //UNTITLED1_TASK3_H
