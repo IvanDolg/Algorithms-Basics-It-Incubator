@@ -22,13 +22,13 @@ void Ladder::ladderTask4() {
     bool isIncreasing = isIncreasingSequence(numbersSequence);
     bool isDecreasing = isDecreasingSequence(numbersSequence);
 
-    cout << "4) Is a number an increasing or decreasing sequence of digits? ";
+    cout << "4) Is a numbers an increasing or decreasing sequence of digits? ";
     if (isIncreasing) {
-        cout << " The number is an increasing sequence." << endl;
+        cout << " The numbers is an increasing sequence." << endl;
     } else if (isDecreasing) {
-        cout << " The number is a decreasing sequence." << endl;
+        cout << " The numbers is a decreasing sequence." << endl;
     } else {
-        cout << " The number is neither an increasing nor a decreasing sequence." << endl;
+        cout << " The numbers is neither an increasing nor a decreasing sequence." << endl;
     }
 }
 

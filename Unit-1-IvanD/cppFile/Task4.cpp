@@ -11,7 +11,6 @@ int Task4::getDigith(int number) {
     if (number <= length) {
         return sequence[number - 1] - '0';
     } else {
-        int repeatCount = (number - 1) / length;
         int position = (number - 1) % length;
         return sequence[position] - '0';
     }
@@ -23,6 +22,6 @@ void Task4::fourthTask() {
     cout << "Enter the value of number: ";
     cin >> number;
 
-    int nthDigit = getDigith(number);
-    cout << "The " << number << "-th digit of the sequence is: " << nthDigit << endl;
+    int correctNumber = getDigith(number);
+    cout << "The " << number << " digit of the sequence is: " << correctNumber << endl;
 }

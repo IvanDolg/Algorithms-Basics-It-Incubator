@@ -33,6 +33,10 @@ void Task3::thirdTask() {
     cout << "Enter your date of birth (in the format DDMMYYYY): ";
     cin >> dateOfBirth;
 
-    int lifePathNumber = calculateLifePathNumber(dateOfBirth);
-    cout << "Your life path number is: " << lifePathNumber << endl;
+    if (dateOfBirth.length() > 8){
+        cout << "The data is incorrect.";
+   } else {
+        int lifePathNumber = calculateLifePathNumber(dateOfBirth);
+        cout << "Your life path number is: " << lifePathNumber << endl;
+    }
 }
