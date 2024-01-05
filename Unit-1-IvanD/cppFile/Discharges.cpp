@@ -2,6 +2,9 @@
 #include "../headerFile/Discharges.h"
 
 using namespace std;
+// предусотреть не возможность ввода отрицательного числа.
+// сделать обработку искл. для int.
+// сделать обработку искл. для вводимого числа от 1 до 1000.
 
 int Discharges::reverseNumber(int number) {
     int reverseNum = 0;

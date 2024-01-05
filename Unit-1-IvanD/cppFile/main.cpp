@@ -1,6 +1,7 @@
 #include <iostream>
 #include "../headerFile/NumberConversion.h"
 #include "../headerFile/Discharges.h"
+#include "Fibonacci.h"
 
 using namespace std;
 
@@ -9,8 +10,9 @@ int showMenu() {
     cout << "Menu:\n";
     cout << "1. Number conversion from 2 to 10\n";
     cout << "2. Discharges\n";
+    cout << "3. Fibonacci numbers\n";
     cout << "0. Exit\n";
-    cout << "Enter number of menu: ";
+    cout << "Enter number of menu:  ";
     cin >> choice;
     return choice;
 }
@@ -19,6 +21,8 @@ int main() {
     int choice;
     NumberConversion numberConversion;
     Discharges discharges;
+    Fibonacci fibonacci;
+
     do {
         choice = showMenu();
         switch (choice) {
@@ -27,6 +31,9 @@ int main() {
                 break;
             case 2:
                 discharges.outPut();
+                break;
+            case 3:
+                fibonacci.outPut();
                 break;
             case 0:
                 cout << "Exit\n";
