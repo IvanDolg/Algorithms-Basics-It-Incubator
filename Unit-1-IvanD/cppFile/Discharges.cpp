@@ -1,10 +1,8 @@
+#include <limits>
 #include "iostream";
 #include "../headerFile/Discharges.h"
 
 using namespace std;
-// предусотреть не возможность ввода отрицательного числа.
-// сделать обработку искл. для int.
-// сделать обработку искл. для вводимого числа от 1 до 1000.
 
 int Discharges::reverseNumber(int number) {
     int reverseNum = 0;
@@ -22,11 +20,15 @@ void Discharges::outPut() {
     int number;
     int reverseNum;
 
-    cout << "Enter number: ";
+    cout << "Enter number from 1 to 2.147.483.646: ";
     cin >> number;
 
-    reverseNum = reverseNumber(number);
+    if (number < 0 || number >= numeric_limits<int>::max()) {
+        cout << "Error: The input number is out of range for int." << endl;
+    } else {
+        reverseNum = reverseNumber(number);
 
-    cout << "Your entered number: " << number << endl;
-    cout << "Your reverse number: " << reverseNum << endl;
+        cout << "Your entered number: " << number << endl;
+        cout << "Your reverse number: " << reverseNum << endl;
+    }
 }
