@@ -9,5 +9,5 @@ add_executable(untitled1 Unit-1-IvanD/cppFile/main.cpp
         Unit-1-IvanD/cppFile/Discharges.cpp
         Unit-1-IvanD/headerFile/Discharges.h
         Unit-1-IvanD/cppFile/Fibonacci.cpp
-        Unit-1-IvanD/cppFile/Fibonacci.h
+        Unit-1-IvanD/headerFile/Fibonacci.h
 )

@@ -3,7 +3,6 @@
 #include "../headerFile/NumberConversion.h"
 
 using namespace std;
-// предусотреть не возможность ввода отрицательного числа.
 
 int NumberConversion::numberConversion(int binaryNumber) {
     int decimalNumber = 0;
