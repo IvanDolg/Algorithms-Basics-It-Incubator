@@ -4,9 +4,11 @@
 class DepositBYN {
 private:
     void addMoney(long long int amount);
+
     long long int BALANCE = 0;
 public:
     void outPut();
+
     long long int getBalance();
 };
 

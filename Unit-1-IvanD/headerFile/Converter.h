@@ -4,7 +4,7 @@
 
 class Converter {
 private:
-    void convertCurrency(DepositBYN depositByn, double ecxhangeRate);
+    void convertCurrency(DepositBYN& depositByn, double ecxhangeRate);
 public:
     void outPut();
 };
